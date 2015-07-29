@@ -32,14 +32,14 @@ customizations to IDE preferences.
 First, *close your Jetbrains IDE*.
 
 Then, clone this repository to someplace cozy (you'll keep it there) and issue
-any of the following as needed:
+any of the following as needed from the `cli` directory:
 
 ```sh
-cli/bin/ide_prefs --ide=rubymine          install
-cli/bin/ide_prefs --ide=intellij          install
-cli/bin/ide_prefs --ide=intellijcommunity install
-cli/bin/ide_prefs --ide=webstorm          install
-cli/bin/ide_prefs --ide=androidstudio     install
+bin/ide_prefs --ide=rubymine          install
+bin/ide_prefs --ide=intellij          install
+bin/ide_prefs --ide=intellijcommunity install
+bin/ide_prefs --ide=webstorm          install
+bin/ide_prefs --ide=androidstudio     install
 ```
 
 This will install the preferences into your IDE of choice.
@@ -60,7 +60,8 @@ settings, first, *close your IDE*.
 Then open a terminal and run the following commands:
 
 ```sh
-cli/bin/ide_prefs --ide=IDE_NAME uninstall
+# cd into `cli`
+bin/ide_prefs --ide=IDE_NAME uninstall
 ```
 
 ## Contributing New Preferences
